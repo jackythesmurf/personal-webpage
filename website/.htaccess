@@ -1,1 +1,4 @@
-AddType image/svg+xml .svg .svgz
+<IfModule mime_module>
+  AddType image/svg+xml .svg .svgz
+</IfModule>
+
