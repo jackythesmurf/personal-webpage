@@ -32,11 +32,11 @@ section {
   border-top-left-radius: 10em 10em;
   border-bottom-right-radius: 10em 10em;
   border-bottom-left-radius: 10em 10em;
-  box-shadow: 8px 8px 50px rgba(211, 72, 33, 0.5);
+  box-shadow: 8px 8px 50px rgba(76, 24, 10, 0.7);
   background: rgba(49, 22, 33, 0.5);
-  overflow: hidden;
-  border-bottom: 4px solid #cc4a40;
-  border-right: 8px solid #cc4a40;
+  border-bottom: 4px solid #ad5953;
+  border-right: 8px solid #ad5953;
+  border-top: 2px solid #ad5953;
   -webkit-backdrop-filter: invert(90%);
           backdrop-filter: invert(90%);
 }
@@ -48,8 +48,12 @@ section h1 {
   color: darkgoldenrod;
 }
 
-#p1 {
-  color: darkgoldenrod;
+#p1 h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+  font-weight: 700;
+  color: #fbae3c;
+  text-shadow: 1px 1px 1px #9a6a23, 1px 2px 1px #9a6a23, 1px 3px 1px #9a6a23, 1px 4px 1px #9a6a23, 1px 6px 6px rgba(16, 16, 16, 0.4), 1px 8px 10px rgba(16, 16, 16, 0.2);
 }
 #p1 img {
   margin-top: 5%;
@@ -63,10 +67,6 @@ section h1 {
   box-shadow: 8px 8px 50px rgba(253, 128, 93, 0.5);
   width: 50%;
 }
-#p1 p {
-  font-size: large;
-}
-
 #p2 {
   color: darkgoldenrod;
 }
@@ -77,7 +77,7 @@ section h1 {
 
 #p4 {
   color: darkgoldenrod;
-  height: 30%;
+  height: 50%;
   margin-bottom: 0%;
 }
 #p4 h1 {
@@ -94,15 +94,20 @@ body div nav ul {
   align-items: center;
   border-bottom-right-radius: 10em 10em;
   border-bottom-left-radius: 10em 10em;
-  border-bottom: 2px solid #ee6969;
-  border-right: 6px solid #ee6969;
-  box-shadow: 8px 8px 50px rgba(211, 72, 33, 0.5);
+  box-shadow: 1px 1px 1px #9a6a23, 1px 2px 1px #9a6a23, 1px 3px 1px #9a6a23, 1px 4px 1px #9a6a23, 1px 6px 6px rgba(16, 16, 16, 0.4), 1px 8px 10px rgba(16, 16, 16, 0.2);
 }
 body div nav ul li {
   padding-bottom: 2%;
+  transition: all 0.2s;
 }
 body div nav ul li a {
-  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #fbae3c;
+  text-shadow: 1px 1px 1px #9a6a23, 1px 2px 1px #9a6a23, 1px 3px 1px #9a6a23, 1px 4px 1px #9a6a23, 1px 6px 6px rgba(16, 16, 16, 0.4), 1px 8px 10px rgba(16, 16, 16, 0.2);
   text-decoration: none;
-  color: rgb(73, 57, 17);
+}
+body div nav ul li:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
