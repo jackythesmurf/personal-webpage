@@ -33,12 +33,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
   padding: 10%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 7%;
+  margin-bottom: 20%;
 
   // border effects
   border-top-right-radius: 10em 10em;
@@ -48,7 +48,7 @@ section {
   
   box-shadow: 8px 8px 50px rgba(76, 24, 10, 0.7);
 
-  
+
   background: rgba(64, 51, 77, 0.5);
   border-bottom: 4px solid #ad5953;
   border-right: 8px solid #ad5953;
@@ -78,6 +78,18 @@ section {
     1px 6px 6px rgba(16,16,16,0.4),
     1px 8px 10px rgba(16,16,16,0.2),
   }
+
+  p {
+    padding: 10%;
+    background-color: #94436C;
+    border-top-right-radius: 10em 10em;
+    border-top-left-radius: 10em 10em;
+    border-bottom-right-radius: 10em 10em;
+    border-bottom-left-radius: 10em 10em;
+    border-bottom: 2px solid #632e48;
+    border-right: 4px solid #4b2236;
+  }
+  
   
   img {
     margin-top: 5%;
@@ -86,18 +98,14 @@ section {
     border-top-left-radius: 10em 10em;
     border-bottom-right-radius: 10em 10em;
     border-bottom-left-radius: 10em 10em;
-    border-bottom: 2px solid #fbae3c;
-    border-right: 4px solid #fbae3c;
-    box-shadow: 8px 8px 50px rgba(253, 128, 93, 0.5);
+    border-bottom: 2px solid #632e48;
+    border-right: 4px solid #4b2236;
+    
     // box-shadow: 8px 8px 50px rgba(0,0,0,0.5);
     width: 50%;
+    background:#94436C ;
   }
-  p {
-    
   
-    
-  
-  }
 }
 
 #p2 {
@@ -123,6 +131,7 @@ section {
 body {
   
   div {
+    
     nav {
       
       
@@ -146,7 +155,8 @@ body {
         1px 8px 10px rgba(16,16,16,0.2),;
         
         li {
-          padding-bottom: 2%;
+          
+          padding-bottom: 1.5%;
           transition: all 0.2s;
           a {
             
@@ -170,6 +180,10 @@ body {
         }
         li:hover {
           transform: scale(1.2);
+          a {
+            color: #ffecb8;
+          }
+          
 
         }
       }
