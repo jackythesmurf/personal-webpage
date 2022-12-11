@@ -33,7 +33,7 @@ section {
   border-bottom-right-radius: 10em 10em;
   border-bottom-left-radius: 10em 10em;
   box-shadow: 8px 8px 50px rgba(76, 24, 10, 0.7);
-  background: rgba(49, 22, 33, 0.5);
+  background: rgba(64, 51, 77, 0.5);
   border-bottom: 4px solid #ad5953;
   border-right: 8px solid #ad5953;
   border-top: 2px solid #ad5953;
@@ -52,7 +52,7 @@ section h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 2em;
   font-weight: 700;
-  color: #fbae3c;
+  color: #facb64;
   text-shadow: 1px 1px 1px #9a6a23, 1px 2px 1px #9a6a23, 1px 3px 1px #9a6a23, 1px 4px 1px #9a6a23, 1px 6px 6px rgba(16, 16, 16, 0.4), 1px 8px 10px rgba(16, 16, 16, 0.2);
 }
 #p1 img {
@@ -68,15 +68,15 @@ section h1 {
   width: 50%;
 }
 #p2 {
-  color: darkgoldenrod;
+  color: #facb64;
 }
 
 #p3 {
-  color: darkgoldenrod;
+  color: #facb64;
 }
 
 #p4 {
-  color: darkgoldenrod;
+  color: #facb64;
   height: 50%;
   margin-bottom: 0%;
 }
@@ -104,7 +104,7 @@ body div nav ul li a {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5vw;
   font-weight: 700;
-  color: #fbae3c;
+  color: #facb64;
   text-shadow: 1px 1px 1px #9a6a23, 1px 2px 1px #9a6a23, 1px 3px 1px #9a6a23, 1px 4px 1px #9a6a23, 1px 6px 6px rgba(16, 16, 16, 0.4), 1px 8px 10px rgba(16, 16, 16, 0.2);
   text-decoration: none;
 }
