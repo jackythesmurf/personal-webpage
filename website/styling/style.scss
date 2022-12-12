@@ -1,7 +1,4 @@
-$back: #001220;
-
-
-
+// $back: #001220;
 
 * {
   padding: 0;
@@ -9,14 +6,13 @@ $back: #001220;
   font-family: "Courier New", Courier, monospace;
   }
 
-#back{
+.back{
   background-image: url("../stacked-waves-haikei.svg");
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 15%;
-  
-
 }
 
 
@@ -55,15 +51,11 @@ section {
   border-top: 2px solid #ad5953;
 
   backdrop-filter: invert(90%) ;
+  
 }
 
 
-
-#land-page {
-  color: darkgoldenrod;
-}
-
-#p1 {
+.p1 {
   h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
@@ -80,7 +72,10 @@ section {
   }
 
   p {
-    padding: 10%;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
     background-color: #94436C;
     border-top-right-radius: 10em 10em;
     border-top-left-radius: 10em 10em;
@@ -103,27 +98,27 @@ section {
     
     // box-shadow: 8px 8px 50px rgba(0,0,0,0.5);
     width: 50%;
-    background:#94436C ;
+    background:#94436C;
   }
   
 }
 
-#p2 {
+.p2 {
   color: #facb64;
   
 }
 
-#p3 {
+.p3 {
   color: #facb64;
 }
 
-#p4 {
+.p4 {
   h1 {
     padding-top: 0%;
   }
   color: #facb64;
 
-  height: 50%;
+  padding-bottom: 0%;
   
   margin-bottom: 0%;
 }
@@ -153,6 +148,8 @@ body {
         
         1px 6px 6px rgba(16,16,16,0.4),
         1px 8px 10px rgba(16,16,16,0.2),;
+
+
         
         li {
           
@@ -179,7 +176,7 @@ body {
           
         }
         li:hover {
-          transform: scale(1.2);
+          transform: scale(1.5);
           a {
             color: #ffecb8;
           }
@@ -188,10 +185,44 @@ body {
         }
       }
     }
-  
+    
   }
+  
   
 }
 
 
 
+
+
+#highlight {
+    transform: scale(1.5);
+    a{
+
+      --color-1: #f8a275;
+      --color-2: #88d5f7;
+      --color-3: #fb9aba;
+      animation: color-animation 4s linear infinite;
+      color: #ffecb8;
+        text-shadow: 1px 1px 1px #9a6a23,
+            1px 2px 1px #9a6a23,
+            1px 3px 1px #9a6a23,
+            1px 4px 1px #9a6a23,
+            
+            1px 6px 6px rgba(16,16,16,0.4),
+            1px 8px 10px rgba(16,16,16,0.2),;
+
+        text-decoration: none;
+    }
+  }
+
+
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }

@@ -4,7 +4,7 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-#back {
+.back {
   background-image: url("../stacked-waves-haikei.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -44,19 +44,18 @@ section h1 {
   padding-top: 1%;
 }
 
-#land-page {
-  color: darkgoldenrod;
-}
-
-#p1 h1 {
+.p1 h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 2em;
   font-weight: 700;
   color: #facb64;
   text-shadow: 1px 1px 1px #9a6a23, 1px 2px 1px #9a6a23, 1px 3px 1px #9a6a23, 1px 4px 1px #9a6a23, 1px 6px 6px rgba(16, 16, 16, 0.4), 1px 8px 10px rgba(16, 16, 16, 0.2);
 }
-#p1 p {
-  padding: 10%;
+.p1 p {
+  padding-top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
   background-color: #94436C;
   border-top-right-radius: 10em 10em;
   border-top-left-radius: 10em 10em;
@@ -65,7 +64,7 @@ section h1 {
   border-bottom: 2px solid #632e48;
   border-right: 4px solid #4b2236;
 }
-#p1 img {
+.p1 img {
   margin-top: 5%;
   margin-bottom: 5%;
   border-top-right-radius: 10em 10em;
@@ -78,20 +77,20 @@ section h1 {
   background: #94436C;
 }
 
-#p2 {
+.p2 {
   color: #facb64;
 }
 
-#p3 {
+.p3 {
   color: #facb64;
 }
 
-#p4 {
+.p4 {
   color: #facb64;
-  height: 50%;
+  padding-bottom: 0%;
   margin-bottom: 0%;
 }
-#p4 h1 {
+.p4 h1 {
   padding-top: 0%;
 }
 
@@ -120,8 +119,70 @@ body div nav ul li a {
   text-decoration: none;
 }
 body div nav ul li:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 body div nav ul li:hover a {
   color: #ffecb8;
+}
+
+#highlight {
+  transform: scale(1.5);
+}
+#highlight a {
+  --color-1: #f8a275;
+  --color-2: #88d5f7;
+  --color-3: #fb9aba;
+  -webkit-animation: color-animation 4s linear infinite;
+          animation: color-animation 4s linear infinite;
+  color: #ffecb8;
+  text-shadow: 1px 1px 1px #9a6a23, 1px 2px 1px #9a6a23, 1px 3px 1px #9a6a23, 1px 4px 1px #9a6a23, 1px 6px 6px rgba(16, 16, 16, 0.4), 1px 8px 10px rgba(16, 16, 16, 0.2);
+  text-decoration: none;
+}
+
+@-webkit-keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
 }/*# sourceMappingURL=style.css.map */
