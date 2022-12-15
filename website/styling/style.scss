@@ -6,12 +6,16 @@
   font-family: "Courier New", Courier, monospace;
   }
 
-.back{
+html {
   background-image: url("../stacked-waves-haikei.svg");
   
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  
+}
+
+body{
   padding-bottom: 15%;
   
  
@@ -56,11 +60,29 @@ section {
   border-top: 2px solid #ad5953;
 
   backdrop-filter: invert(90%) ;
+
   
 }
 
 
-.p1 {
+#landing-page {
+  #p1-boxes{
+    max-height: 400px;
+  }margin-right: 5%;
+  .text-box{
+    max-height: 40px;
+    padding:0;
+    margin:0;
+
+    padding:1%;
+    padding-left: 5%;
+    padding-bottom: 6%;
+    margin-top: 10%;
+    
+    
+  }
+  display: grid;
+  grid-template-columns: 3fr 4fr;
   h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
@@ -79,7 +101,7 @@ section {
     
     margin-bottom: 5%;
     
-    color: #facb64;
+    color: #f4c014;
     
     text-shadow: 1px 1px 1px #9a6a23,
         1px 2px 1px #9a6a23,
@@ -88,8 +110,11 @@ section {
         
     1px 6px 6px rgba(16,16,16,0.4),
     1px 8px 10px rgba(16,16,16,0.2),;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 300;
     #emoji{
-      font-size: 2em;
+      font-size: 40px;
     }
   }
 
@@ -109,16 +134,29 @@ section {
   
   
   img {
+    
     margin-top: 5%;
     margin-bottom: 5%;
+
     border-top-right-radius: 10em 10em;
-    border-top-left-radius: 10em 10em;
-    border-bottom-right-radius: 10em 10em;
-    border-bottom-left-radius: 10em 10em;
-    
+  border-top-left-radius: 10em 10em;
+  border-bottom-right-radius: 10em 10em;
+  border-bottom-left-radius: 10em 10em;
+  
+  box-shadow: 8px 8px 50px rgba(76, 24, 10, 0.7);
+
+
+  // background: rgba(64, 51, 77, 0.5);
+  background: rgba(237, 216, 183, 0.5);
+
+  border-bottom: 4px solid #ad5953;
+  border-right: 8px solid #ad5953;
+  border-top: 2px solid #ad5953;
+
+  backdrop-filter: invert(90%) ;
     
     // box-shadow: 8px 8px 50px rgba(0,0,0,0.5);
-    width: 50%;
+    width: 90%;
     
   }
   
