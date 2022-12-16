@@ -8,19 +8,12 @@
 
 html {
   background-image: url("../stacked-waves-haikei.svg");
-  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   
-}
-
-body{
-  padding-bottom: 15%;
   
- 
 }
-
 
 .svg-image {
   width: 60%;
@@ -67,22 +60,36 @@ section {
 
 #landing-page {
   #p1-boxes{
+    background-color: #1b898d;
     max-height: 400px;
-  }margin-right: 5%;
+    border-top-right-radius: 5em 5em;
+    border-top-left-radius: 10em 10em;
+    border-bottom-right-radius: 10em 10em;
+    border-bottom-left-radius: 5em 5em;
+
+  }
+  margin-right: 5%;
+
   .text-box{
-    max-height: 40px;
+    max-height: 3%;
     padding:0;
     margin:0;
 
-    padding:1%;
+    padding-bottom:5%;
     padding-left: 5%;
-    padding-bottom: 6%;
     margin-top: 10%;
+
+  //  background-color: #275ab9;
+  //  border-top-right-radius: 5em 5em;
+  //   border-top-left-radius: 10em 10em;
+  //   border-bottom-right-radius: 10em 10em;
+  //   border-bottom-left-radius: 5em 5em;
     
     
   }
   display: grid;
   grid-template-columns: 3fr 4fr;
+  
   h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
@@ -99,7 +106,7 @@ section {
   }
   p {
     
-    margin-bottom: 5%;
+
     
     color: #f4c014;
     
@@ -116,6 +123,7 @@ section {
     #emoji{
       font-size: 40px;
     }
+    
   }
 
   // p {
@@ -137,26 +145,25 @@ section {
     
     margin-top: 5%;
     margin-bottom: 5%;
-
-    border-top-right-radius: 10em 10em;
-  border-top-left-radius: 10em 10em;
-  border-bottom-right-radius: 10em 10em;
-  border-bottom-left-radius: 10em 10em;
-  
-  box-shadow: 8px 8px 50px rgba(76, 24, 10, 0.7);
-
-
-  // background: rgba(64, 51, 77, 0.5);
-  background: rgba(237, 216, 183, 0.5);
-
-  border-bottom: 4px solid #ad5953;
-  border-right: 8px solid #ad5953;
-  border-top: 2px solid #ad5953;
-
-  backdrop-filter: invert(90%) ;
     
     // box-shadow: 8px 8px 50px rgba(0,0,0,0.5);
     width: 90%;
+    
+  }
+  @media only screen and (max-width: 800px) {
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    .text-box {
+      
+      margin-bottom: 20%;
+      padding-bottom: 20%;
+      padding-right: 10%;
+    }
+    grid-template-columns: 2fr;
+    img {
+      width:120%
+    }
     
   }
   
@@ -274,7 +281,9 @@ body {
 
             text-decoration: none;
             
-          
+            @media only screen and (max-width: 600px) {
+              font-size: 15px;
+            }
           }
           
         }
@@ -336,15 +345,23 @@ body {
     
     ol{
       list-style: none;
-      padding-left: 10%;
-      display:grid;
-      grid-template-columns: 150px 150px 150px;
-      grid-template-rows: auto;
+      padding: 0%;
     
         li{
           
           
           
+        }
+      }
+      #skill-sets {
+        
+        grid-template-columns: 150px 150px 120px;
+        display:grid;
+        li{
+          padding: 0%;
+        }
+        @media only screen and (max-width: 600px) {
+          grid-template-columns: 120px 120px;
         }
       }
   }
@@ -357,9 +374,10 @@ article{
   gap: 50px;
   padding-left: 5%;
   padding-right: 5%;
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 2fr;
+  }
 
-  
-  
   div {
     
     // font
@@ -406,6 +424,7 @@ article{
         padding-bottom: 3%;
       }
       li {
+        
         padding-bottom: 1%;
         text-decoration: none;
         
@@ -419,6 +438,7 @@ article{
       text-decoration: none;
       color: #ff91ad;
       font-weight: bold;
+      
     }
     
   
