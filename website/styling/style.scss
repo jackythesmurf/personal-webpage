@@ -342,6 +342,20 @@ body {
 
 
   #languages-skills{
+    max-height: 60vh; ;
+    h1{
+      text-align: center;
+      color: #facb64;
+    
+    text-shadow: 1px 1px 1px #9a6a23,
+        1px 2px 1px #9a6a23,
+        1px 3px 1px #9a6a23,
+        1px 4px 1px #9a6a23,
+        
+    1px 6px 6px rgba(16,16,16,0.4),
+    1px 8px 10px rgba(16,16,16,0.2),;
+      margin-bottom: 10%;
+    }
     
     ol{
       list-style: none;
