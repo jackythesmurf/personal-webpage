@@ -63,6 +63,10 @@ section h1 {
   padding-bottom: 5%;
   padding-left: 5%;
   margin-top: 10%;
+  border-top-right-radius: 5em 5em;
+  border-top-left-radius: 10em 10em;
+  border-bottom-right-radius: 10em 10em;
+  border-bottom-left-radius: 5em 5em;
 }
 #landing-page h1 {
   font-family: "Courier New", Courier, monospace;
